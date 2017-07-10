@@ -1,0 +1,493 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Multistep Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/parsley.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link type="text/css" href="css/jquery.ui.core.css" rel="stylesheet" />
+      	<link type="text/css" href="css/jquery.ui.theme.css" rel="stylesheet" />
+      	<link type="text/css" href="css/jquery.ui.selectmenu.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+        <link href="css/form-style.min.css" rel="stylesheet" >
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.position.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.selectmenu.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="warrantyWrapper">
+        <header class="clearfix">
+            <ul id="progressBar">
+              <li class="indicatorOne"><span class="indiNum">1</span>Personal Info</li>
+              <li class="indiBar"><span class="barOne"></span></li>
+              <li class="indicatorTwo"><span class="indiNum">2</span>Install &amp; Purchase Details</li>
+              <li class="indiBar"><span class="barTwo"></span></li>
+              <li class="indicatorThree"><span class="indiNum">3</span>Confirmation</li>
+              <li class="indiBar"><span class="barThree"></span></li>
+              <li class="indicatorFour"><span class="indiNum">4</span>Success</li>
+            </ul>
+
+      </header>
+      <form id="warrantyRegForm">
+
+
+        <div id="personalInfo" class="form-section">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="row">
+          <p>
+            <label>First name</label><br>
+            <input type="text" name="fName" hold-required="" />
+          </p>
+          <p>
+            <label>Last name</label><br>
+            <input type="text" name="lName" hold-required="" />
+          </p>
+        </div><!-- ./row -->
+        <div class="row">
+          <p>
+            <label>Email</label><br>
+            <input type="email" data-parsley-type="email" name="email"  hold-required="" />
+          </p>
+          <p>
+            <label>Phone number (optional)</label><br>
+            <input type="tel" name="Phone" />
+          </p>
+        </div><!-- ./row -->
+
+        </fieldset>
+        <fieldset>
+          <div class="row">
+          <p>
+            <label for="Address">Address</label><br>
+            <input type="text" name="personAddress" required="" id="personAddress" />
+          </p>
+          <p>
+            <label>Address line 2 (optional)</label><br>
+            <input type="text" id="personOptAddress" name="personOptAddress " />
+          </p>
+        </div><!-- ./row -->
+        <div class="row">
+          <p>
+            <label>City</label><br>
+            <input type="text" id="personCity" name="personCity" hold-required="" />
+          </p>
+          <p class="stateSelect">
+            <label for="state">State</label><br />
+            <select name="state" id="personState" class="state" hold-required="" >
+              <option value="">Select</option>
+              <option value="AK">AK</option>
+              <option value="AL">AL</option>
+              <option value="AR">AR</option>
+              <option value="AZ">AZ</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DC">DC</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="IA">IA</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="MA">MA</option>
+              <option value="MD">MD</option>
+              <option value="ME">ME</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MO">MO</option>
+              <option value="MS">MS</option>
+              <option value="MT">MT</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="NE">NE</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NV">NV</option>
+              <option value="NY">NY</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VA">VA</option>
+              <option value="VT">VT</option>
+              <option value="WA">WA</option>
+              <option value="WI">WI</option>
+              <option value="WV">WV</option>
+              <option value="WY">WY</option>
+            </select>
+          </p>
+          <p class="zipField">
+            <label>Zip code</label><br>
+            <input type="text" maxlength="5" id="personZipCode" name="personZipCode" data-parsley-type="integer" data-parsley-minlength="5" hold-required="" />
+          </p>
+        </div><!-- ./row -->
+        </fieldset>
+
+        <div class="row">
+           <label class="control control--checkbox">Join our mailing list
+             <input type="checkbox" name="mailList" checked="checked" />
+             <div class="control__indicator"></div>
+           </label>
+
+
+    </div><!-- ./row -->
+
+
+      </div><!-- .personalInfo-->
+
+      <div id="detailSection" class="form-section">
+        <div id="installInfoReview" class="hidden">
+        <header>
+          <div class="row">
+            <div class="col-10">
+              <h3>Installation 1</h3>
+            </div>
+            <div class="col-2 editDetBtn">
+              <a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Edit details</a>
+            </div>
+        </div><!--/.row -->
+        </header>
+        <div class="row">
+        <div class="infoReviewOne">
+          <h4>Installation Type</h4>
+          <p>Dynamic Info</p>
+          <h4>Installation Address</h4>
+          <p></p>
+        </div><!--/.infoReviewOne -->
+        <div class="infoReviewTwo">
+          <h4>Date of purchase</h4>
+          <p></p>
+          <h4>Place of purchase</h4>
+          <p></p>
+        </div><!--/.infoReviewTwo -->
+        <div class="infoReviewThree">
+          <h4>Products installed</h4>
+          <div class="row">
+            <div class="reviewProdNum">D416-40311</div>
+            <div class="reviewQuantNum"><strong>Quantity:</strong> 34</div>
+          </div>
+        </div><!--/.infoReviewThree -->
+        </div><!--/.row -->
+        </div><!---/CONFIRMTATION BLOCK --->
+
+
+
+      <div id="installPurchaseInfo">
+        <div id="locationInfo1" class="locInfo">
+        <fieldset>
+          <legend>Install and Purchase Details</legend>
+          <div class="row">
+          <div class="sameAddress">
+            <label class="control control--checkbox">Check here if installation is the same as personal address
+              <input type="checkbox" name="sameAddress" />
+              <div class="control__indicator"></div>
+        </div>
+      </div><!--/.row -->
+      <div class="row">
+        <p>
+          <select id="installType" name="Install Type">
+            <option value="residential">Residential </option>
+            <option value="Industrial">Commercial/Industrial</option>
+          </select>
+        </p>
+        </div><!--/.row -->
+        </fieldset>
+          <fieldset>
+            <div class="row">
+            <p>
+              <label for="Install Address">Installation Address</label><br>
+              <input type="text" id="installAddress" name="installAddress" hold-required="" />
+            </p>
+            <p>
+              <label>Address Line 2 (Optional)</label><br>
+              <input type="text" id="optinstallAddress" name="optinstallAddress" />
+            </p>
+          </div><!-- ./row -->
+          <div class="row">
+            <p>
+              <label>City</label><br>
+              <input type="text" id="installCity" name="installCity" hold-required="" />
+            </p>
+            <p class="stateSelect">
+              <label for="state">State</label><br />
+              <select name="installState" id="installState" class="state" hold-required="" >
+                <option value="">Select</option>
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </p>
+            <p class="zipField">
+              <label>Zip Code</label><br>
+              <input type="text" maxlength="5" id="installZipCode" name="installZipCode" data-parsley-type="integer" data-parsley-minlength="5" hold-required="" />
+            </p>
+          </div><!-- ./row -->
+          </fieldset>
+          <hr>
+          <div class="row">
+          <fieldset>
+
+          <p class="purchaseDate">
+            <label for="purchaseDate">Date of purchase (eg: 01/01/2017)</label><br>
+            <input type="text" name="purchaseMonth"> / <input type="text" name="purchaseDay" /> / <input type="text" name="purchaseYear" />
+          </p>
+          <p>
+            <label for="Purchase Place">Place of purchase</label><br>
+            <select id="purchasePlace" name="purchasePlace">
+              <option value="toggled direct">toggled direct</option>
+              <option value="toggled store">toggled store</option>
+              <option value="The Home Depot">The Home Depot</option>
+              <option value="Amazon">Amazon</option>
+              <option value="other">Other</option>
+            </select>
+            </p>
+            <p class="otherPlace hidden">
+            <input type="text" name="otherPlace" />
+          </p>
+
+        </fieldset>
+      </div><!-- /.row -->
+
+    </div><!-- /.locationInfo -->
+        <div id="modelInfo">
+        <fieldset>
+          <div class="row">
+          <p class="modelNumField">
+            <label for="modelNumber">Model # <a data-fancybox="modal" data-src="#findNumber" href="javascript:;"><span>?</span></a></label><br>
+            <input type="text" name="modelNumber" />
+          </p>
+          <p class="quantityField">
+            <label for="quantity">Quantity</label><br>
+            <input type="text" name="quantity" />
+          </p>
+        </div><!-- /.row -->
+        </fieldset>
+      </div><!-- /.modelInfo -->
+        <div class="row">
+          <p class="addMore"><a href="#" id="addProduct"><span>+</span>  Add another product</a></p>
+        </div><!-- /.row -->
+        </div><!-- /#installPurchaseInfo -->
+
+        <!-- Append AdditionalLocations Here -->
+        <div class="additionalLocations"></div>
+
+        <div class="row">
+          <p class="addMore"><a href="#" id="addInstallLoc"><span>+</span> Add another installation location</a></p>
+        </div><!-- /.row -->
+      </div><!-- /Purchase Info .form-section -->
+
+
+
+      <!-- START INSTALL REVIEW SECTION -->
+      <div id="reviewSection" class="form-section">
+        <!-- Start Personal Info Review Block -->
+        <div id="installInfoReview">
+        <header>
+          <div class="row">
+            <div class="col-10">
+              <h3>Personal Information</h3>
+            </div>
+            <div class="col-2 editDetBtn">
+              <a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Edit details</a>
+            </div>
+        </div><!--/.row -->
+        </header>
+        <div class="row">
+        <div class="infoReviewOne">
+          <h4>Name</h4>
+          <p>Scott Calvin</p>
+          <h4>Address</h4>
+          <p>426 West Chester Blvd<br>
+            Chicago, IL 60616
+          </p>
+
+        </div><!--/.infoReviewOne -->
+        <div class="infoReviewTwo">
+          <h4>Email</h4>
+          <p>Scott@samplemail.com</p>
+          <h4>Phone</h4>
+          <p>1-616-810-2402</p>
+        </div><!--/.infoReviewTwo -->
+        <div class="infoReviewThree">
+          <h4>Products installed</h4>
+          <div class="row">
+            <div class="reviewProdNum">D416-40311</div>
+            <div class="reviewQuantNum"><strong>Quantity:</strong> 34</div>
+          </div>
+        </div><!--/.infoReviewThree -->
+        </div><!--/.row -->
+      </div><!---/personal BLOCK --->
+
+        <!-- Start Personal Info Review Block -->
+        <div id="installInfoReview">
+        <header>
+          <div class="row">
+            <div class="col-10">
+              <h3>Installation 1</h3>
+            </div>
+            <div class="col-2 editDetBtn">
+              <a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Edit details</a>
+            </div>
+        </div><!--/.row -->
+        </header>
+        <div class="row">
+        <div class="infoReviewOne">
+          <h4>Installation Type</h4>
+          <p>Dynamic Info</p>
+          <h4>Installation Address</h4>
+          <p></p>
+        </div><!--/.infoReviewOne -->
+        <div class="infoReviewTwo">
+          <h4>Date of purchase</h4>
+          <p></p>
+          <h4>Place of purchase</h4>
+          <p></p>
+        </div><!--/.infoReviewTwo -->
+        <div class="infoReviewThree">
+          <h4>Products installed</h4>
+          <div class="row">
+            <div class="reviewProdNum">D416-40311</div>
+            <div class="reviewQuantNum"><strong>Quantity:</strong> 34</div>
+          </div>
+        </div><!--/.infoReviewThree -->
+        </div><!--/.row -->
+        </div><!---/CONFIRMTATION BLOCK --->
+
+
+
+      </div><!--- /CONFIRMATIONS SECTION  -->
+
+
+        <!--- SUCCESS SECTION  -->
+        <div id="success-section" class="hidden">
+          <h1>Success!</h1>
+          <p>Thank you for registering your toggled product!</p>
+          <p>Please retain your receipt to exercise a warranty claim.</p>
+
+        </div> <!--- /SUCCESS SECTION  --->
+
+        <!--- FORM NAV SECTION  -->
+        <div class="form-navigation">
+            <button type="button" class="next svg btn btn-info pull-right">Next <div class="icon"></div></button>
+            <button type="button" class="previous svg btn btn-info"><div class="icon"></div> Back</button>
+            <input type="submit" class="btn btn-default pull-right">
+            <span class="clearfix"></span>
+         </div>
+       </form><!-- /FORM -->
+
+       <!--- FIND MODEL NUMBER  -->
+       <div style="display:none;">
+       <div id="findNumber">
+         <h1>Where to find the model number</h1>
+         <section>
+           <p>The model number is printed on the product itself.</p>
+           <p>For example, on the backside for toggled LED tubes.</p>
+         </section>
+         <section>
+           <p>The model number can also be found on our retail packaging, located near the barcode.</p>
+         </section>
+         <section>
+           <p>For further assistance call 1-844-toggled.</p>
+         </section>
+       </div>
+       </div> <!--- /Find Number SECTION  --->
+
+
+      </div><!-- /#warrantyWrapper -->
+
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+        <script src="js/parsley.min.js" /></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+        <script src="js/custom.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

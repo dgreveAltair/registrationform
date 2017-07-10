@@ -1,0 +1,867 @@
+@green        : #80c342;
+@darkergray   :#525357;
+@darkgray     : #6d6e71;
+@midgray      : #dedede;
+@litegray     : #e6e6e6;
+@offwhite     : #FBFCFC;
+@white        : #FFF;
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+/*-------------------------
+fonts/avenir
+------------------------*/
+
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=c521bfb4-1c5f-4a2b-8f4f-92816e45e950&fontids=1475508,O1475514,1475532,1475538,1475544,1475550");
+
+
+/* LIGHT */
+@font-face{
+  /*Avenir LT W01_35 Light1470494*/
+font-family:"Avenir Light";
+src:url("../../css/fonts/avenir/fonts/1470494/5a11dc52-53c0-47c0-901b-36f82c278c8c.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1470494/5a11dc52-53c0-47c0-901b-36f82c278c8c.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1470494/46e5f6d4-d051-490e-9d91-63a5fd44065f.woff2") format("woff2"),url("../../css/fonts/1470494/157c4ec7-33d6-4fc5-bd84-88bc806f9a11.woff") format("woff"),url("../../css/fonts/1470494/5b8f12e8-9bce-4257-8991-35bcda5dbf32.ttf") format("truetype");
+}
+@font-face{
+  /*Avenir LT LT W01_35 Light Oblique*/
+font-family:"Avenir Light Oblique";
+src:url("../../css/fonts/avenir/fonts/1470497/27cecae9-f228-4901-adf3-b725f2b09c9b.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1470497/27cecae9-f228-4901-adf3-b725f2b09c9b.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1470497/977032f9-f4b1-482b-94bb-92d3d15d69bd.woff2") format("woff2"),url("../../css/fonts/1470497/01ceb911-fb91-4f1a-a177-592321a9889b.woff") format("woff"),url("../../css/fonts/1470497/d1b18ed0-95a7-490e-8847-d3afe4e79c9d.ttf") format("truetype");
+}
+/* BOOK */
+@font-face{
+  /*Avenir LT W01_45 Book1475508*/
+font-family:"Avenir Book";
+src:url("../../css/fonts/avenir/fonts/1475508/710789a0-1557-48a1-8cec-03d52d663d74.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475508/710789a0-1557-48a1-8cec-03d52d663d74.eot?#iefix") format("eot"),url("../../css/fonts/avenir/065a6b14-b2cc-446e-9428-271c570df0d9.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475508/65d75eb0-2601-4da5-a9a4-9ee67a470a59.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475508/c70e90bc-3c94-41dc-bf14-caa727c76301.ttf") format("truetype");
+}
+@font-face{
+  /*Avenir LT W01_45 Book O1475514*/
+font-family:"Avenir Book Oblique";
+src:url("../../css/fonts/avenir/fonts/1475514/d8c50fcc-bc32-4f31-8c24-b170c64e2254.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475514/d8c50fcc-bc32-4f31-8c24-b170c64e2254.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1475514/476612d9-282d-4f76-95cd-b4dd31e7ed21.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475514/f1ebae2b-5296-4244-8771-5f40e60a564a.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475514/04d1bf6c-070d-4b7e-9498-6051c9f0c349.ttf") format("truetype");
+}
+
+/* MEDIUM */
+@font-face{
+  /*Avenir LT W01_65 Medium1475532*/
+font-family:"Avenir Medium";
+src:url("../../css/fonts/avenir/fonts/1475532/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475532/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1475532/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475532/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475532/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype");
+}
+@font-face{
+  /*Avenir LT W01_65 Medium1475538*/
+font-family:"Avenir Medium Oblique";
+src:url("../../css/fonts/avenir/fonts/1475538/cebcf56a-ea7e-4f5c-8110-a7ee367c1f91.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475538/cebcf56a-ea7e-4f5c-8110-a7ee367c1f91.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1475538/deb5e718-7abb-4df3-9365-edfa95317090.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475538/04801919-17ee-4c6b-8b17-eb1965cb3ed6.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475538/cee053ec-4b41-4506-a1fe-796261690610.ttf") format("truetype");
+}
+/* HEAVY */
+@font-face{
+  /*Avenir LT W01_85 Heavy1475544*/
+font-family:"Avenir Heavy";
+src:url("../../css/fonts/avenir/fonts/1475544/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475544/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475544/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475544/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf") format("truetype");
+}
+@font-face{
+  /*Avenir LT W01_85 Heavy 1475550*/
+font-family:"Avenir Heavy Oblique";
+src:url("../../css/fonts/avenir/fonts/1475550/e6b412d9-d1ed-4b17-bb93-a6911df8640d.eot?#iefix");
+src:url("../../css/fonts/avenir/fonts/1475550/e6b412d9-d1ed-4b17-bb93-a6911df8640d.eot?#iefix") format("eot"),url("../../css/fonts/avenir/fonts/1475550/3c210c80-960f-4684-850b-25390b4d08af.woff2") format("woff2"),url("../../css/fonts/avenir/fonts/1475550/cb5c71ad-e582-4d00-929c-67fbfaeb1c27.woff") format("woff"),url("../../css/fonts/avenir/fonts/1475550/9ced8e96-4602-4507-8c20-4ff381949a9a.ttf") format("truetype");
+}
+
+
+
+
+
+
+html {
+    color: @offwhite;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: @green;
+    text-shadow: none;
+}
+
+::selection {
+    background: @green;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid @litegray;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: @green;
+    color: @white;
+    padding: 0.2em 0;
+}
+
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body {background: @offwhite;font-family: "Avenir Book",arial;line-height: 1.5}
+
+
+a {color: @green}
+a:hover, a:active {color:@darkgray}
+
+
+
+#warrantyWrapper {
+  width: 960px;
+  padding: 8px;
+  margin: 0 auto;
+}
+#warrantyWrapper h1,h2,h3,h4,h5 {font-family: "Avenir Medium",arial;}
+
+
+/***
+Borrow styling from Bootstrap
+**/
+#warrantyWrapper .row {
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  position: relative;
+}
+#warrantyWrapper p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.col-10 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333333%;
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-2 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666667%;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+header {
+  text-align: center;
+  margin:0 auto 45px;
+  width: 669px;
+}
+
+
+/*** Progress Bar Styling ***/
+
+#region li:before, .product-left-column li:before, .interior li:before {display: none;}
+
+ul#progressBar {
+  font-family: "Avenir Medium",arial;
+  font-size: 12px;
+  list-style: none;
+  width: 669px;
+  margin: 50px auto;
+  color: @darkgray;
+}
+ul#progressBar li {
+  float: left;
+  position: relative;
+  padding: 0;
+  width: 147px;
+}
+
+
+ul#progressBar li .indiNum {
+  background: @white;
+  color: @darkgray;
+  font-size: 36px;
+  font-family: "Avenir Heavy",arial;
+  display: block;
+  border: 4px solid @darkergray;
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  margin: 15px auto;
+  line-height: 90px;
+  white-space: nowrap;
+}
+
+ul#progressBar li.active .indiNum {
+  background: @green;
+  border-color: @green;
+  color:@white;
+}
+ul#progressBar li.active {
+  font-weight: 600;
+}
+
+ul#progressBar li.completed .indiNum {
+  background: @litegray;
+    border: none;
+    color: @offwhite;
+    width: 90px;
+    height: 90px;
+    line-height: 89px;
+    margin-bottom: 26px;
+}
+
+
+ul#progressBar li.indiBar span{
+  width: 60px;
+  content: "";
+  background-color: @darkergray;
+  position: absolute;
+  left: -28px;
+  top: 61px;
+  z-index: -1;
+  height: 4px;
+}
+
+ul#progressBar li.indiBar span.completed{
+  background-color: #ccc;
+}
+.gray-bar
+{
+        position: relative;
+}
+
+/***** Form Nav styling ****/
+.btn-info, #warrantyRegForm .form-navigation input[type="submit"] {
+  background: @darkgray;
+  border: 1px solid @darkgray;
+  border-radius: 30px;
+  color: @white;
+  float: right;
+  width: 120px;
+  padding:14px 15px;
+  position: relative;
+}
+
+.previous {
+  float: left;
+  padding-left: 40px;
+}
+
+
+.next .icon, .previous .icon {
+  width: 12px;
+  height: 20px;
+  display: inline-block;
+  background: url(../images/whiteArrow_prev-next.svg) 0 0;
+  background-size: cover;
+  position: absolute;
+  top: 13px;
+}
+
+.next .icon {
+  right: 18px;
+}
+
+.previous .icon {
+-webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 18px
+}
+
+
+
+.btn-info:hover,.btn-info:active, .btn-info:hover .icon {
+  background-color:@white;
+  border-color:@darkgray;
+  color:@darkgray;
+  cursor: pointer;
+}
+
+.btn-info:hover .icon {
+  background: url(../images/greyArrow_prev-next.svg) 0 0;
+}
+
+
+/*** Form styling ****/
+#warrantyRegForm, p.addMore a {
+  color:@darkgray;
+  text-decoration: none;
+}
+
+#warrantyRegForm legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#warrantyRegForm p {
+  font-size: 14px;
+  width: 422px;
+  margin-right: 20px;
+  float: left;
+}
+
+
+/**setup show/hide for multistep with parsley validation ***/
+.form-section {display: none;}
+.form-section.current {display: inherit;}
+
+
+/*** Shorter fields ***/
+#warrantyRegForm p.stateSelect {
+  width: 230px;
+}
+ #warrantyRegForm p.zipField {
+  width: 172px;
+}
+
+ #warrantyRegForm p.sameAddress {
+   width: 100%;
+ }
+
+#warrantyRegForm .purchaseDate input {
+  width: 82px;
+}
+
+#warrantyRegForm p.modelNumField {
+  width: 260px
+}
+
+#warrantyRegForm p.quantityField {
+  width: 140px
+}
+#warrantyRegForm p.otherPlace{
+  float: right;
+  margin-right: 35px;
+}
+
+
+#personalInfo, #installPurchaseInfo, .additionalLocations .locInfo{
+  background: @litegray;
+  border-radius: 10px;
+  padding: 30px 0 30px 44px;
+  margin-bottom: 20px;
+}
+
+
+
+#warrantyRegForm input, #warrantyRegForm select {
+  border-radius: 30px;
+  border:1px solid @midgray;
+  color: @darkgray;
+  width: 100%;
+  padding: 8px 25px;
+  font-size: 14px;
+  height: 36px;
+}
+#warrantyRegForm input:focus,
+#warrantyRegForm select:focus {
+  border-color: @green;
+  outline: none !important;
+}
+
+/*** custom checkboxes ***/
+.mailList {position:relative;}
+
+.control {
+	font-size: 14px;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 22px;
+	cursor: pointer;
+}
+/** hide default input **/
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/** style custom input **/
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background: @white;
+  border: 1px solid #dddddd;
+
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: @white;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: @white;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 2px;
+	left: 5px;
+	width: 4px;
+	height: 10px;
+	transform: rotate(45deg);
+	border: solid @green;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+/*** End custom checkbox styling **/
+
+
+/*** custom style for add more ***/
+
+p.addMore a:hover,p.addMore a:active {
+  color:@darkergray;
+  text-decoration: none;
+}
+
+
+p.addMore a span, p.modelNumField span{
+  background: @white;
+  border: 1px solid @darkgray;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.remLocation {
+  position: absolute;
+  right: 43px;
+  top: 25px;
+}
+
+p.modelNumField span {
+  background:@green;
+  border: none;
+  color: @white;
+}
+
+#addInstallLoc {
+  display: block;
+  margin: 0 0 20px 30px;
+}
+
+
+/*** INFO REVIEW SECTION STYLING ****/
+#installInfoReview {
+  background: @litegray;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+#installInfoReview header {
+  width: 100%;
+  background: #6e6d71;
+  color: @white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0;
+}
+
+.editDetBtn {
+  background: #4d4d4d;
+  border-top-right-radius: 10px;
+  padding: 12px;
+}
+#installInfoReview h3{font-family: "Avenir Book", Arial; font-size:14px; color: @white; text-align: left; padding-left: 30px; }
+#installInfoReview a {color: @white; font-size: 14px;}
+#installInfoReview a:hover, #installInfoReview a:active {text-decoration: none;color: #eee;}
+#installInfoReview h4,
+#installInfoReview p,
+.reviewQuantNum,
+.reviewProdNum
+{font-size:12px;}
+
+.reviewProdNum {width: 108px;}
+
+.infoReviewOne, .infoReviewTwo, .infoReviewThree{
+  float: left;
+  border-right: 1px solid #FBFCFC;
+  margin: 8px 0;
+  padding: 12px 30px;
+}
+
+.infoReviewOne{width:276px; }
+.infoReviewTwo{width:298px; }
+.infoReviewThree{width:300px; border: none;}
+/**** END INFO REVIEW ****/
+
+
+
+/*** SUCCESS STYLING ****/
+#success-section h1,{
+  color: @green !important;
+  font-size: 42px;
+  text-align: center;
+  margin: 150px 0 40px;
+}
+#success-section p, #findNumber p{
+  font-size:24px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+/**Number Find  ****/
+#findNumber h1 {
+  color: @green !important;
+  font-size: 28px;
+  text-align: center;
+  margin: 60px 0 44px;
+}
+#success-section p, #findNumber P{
+  font-size:24px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/** FANCY BOX  ***/
+.fancybox-slide>* {
+  border-radius: 20px;
+}
+
+.fancybox-close-small {
+  top: 26px;
+  right:26px;
+  width: 70px;
+  height: 70px;
+}
+
+.fancybox-close-small:after  {
+  background: transparent;
+  color: #ccc;
+  width: 94px;
+  height: 94px;
+  font: 70px/30px "Avenir Light",sans-serif;
+}
+
+.fancybox-close-small:hover:after {
+  background: transparent;
+  color: #ccc;
+  outline: none;
+}
+
+/* UI STYLES DROPDOWNS **/
+.ui-selectmenu {
+  border-radius: 30px;
+    border: 1px solid @midgray;
+    width: 100% !important;
+    padding: 8px 25px;
+    font-size: 14px;
+    height: 36px;
+    background: #FBFCFC;
+}
+.ui-selectmenu:hover {
+  text-decoration: none;
+  border: 1px solid @green;
+}
+.ui-state-default .ui-icon {
+  background-image: url(../images/grayArrow_dropDown.svg)/*{iconsDefault}*/;
+  right: 14px;
+  margin-top: 0;
+  top: 14px;
+}
+.ui-icon-triangle-1-s {
+  background-position: 0 0;
+}
+
+.ui-selectmenu-status {
+  line-height: 0;
+  padding: 8px 5px;
+  color: @darkgray;
+  }
+    .ui-selectmenu-menu  ul{
+      margin-left: 18px;
+      font-size: 14px;
+      color: @darkgray;
+    }
+  .ui-selectmenu-menu  ul li:hover {
+    background-color: @green;
+  }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
